@@ -1,29 +1,123 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Index - SmitterPC</title>
-<link rel="stylesheet" href="css/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home | SmitterPC NCAA</title>
+  <meta name="description" content="Remember the Madness! SmitterPC NCAA Pools — Live links, Sweet16 entry, Standings, QuikPik, and history." />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-<nav class="nav">
-  <a href="index.html">Home</a>
-  <a href="live.html">Live</a>
-  <a href="sweet16.html">Sweet16</a>
-  <a href="standings.html">Standings</a>
-  <a href="quikpik.html">QuikPik</a>
-  <a href="jelani.html">Jelani</a>
-  <a href="history.html">HOF</a>
-  <a href="privacy.html">Privacy</a>
-  <a href="winners.html">Winners</a>
-</nav>
+  <header class="topbar">
+    <div class="container">
+      <div class="brand">
+        <img src="assets/img/logo-placeholder.svg" alt="SmitterPC Logo" />
+        <span class="brand-title">SmitterPC NCAA '25</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="live.html">Live</a>
+        <a href="sweet16.html">Sweet16</a>
+        <a href="standings.html">Standings</a>
+        <a href="quikpik.html">QuikPik</a>
+        <a href="history.html">HOF</a>
+      </nav>
+    </div>
+  </header>
 
-<section class="card">
-<h1>Welcome to SmitterPC NCAA Pools</h1><p>This is the new, lightweight version of your site — built in HTML and ready to host on GitHub Pages.</p>
-</section>
-<p class="footer">© 2025 SmitterPC Sports Enterprises Inc</p>
-</div>
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-media" style="background-image:url('assets/img/hero-placeholder.jpg')"></div>
+      <div class="container hero-content">
+        <h1 class="headline">March Madness. We're Ready! Who You Got?</h1>
+        <p class="subhead">The Road to the Final Four w/ your hosts <strong>SmitterPC</strong>, <strong>Dicky V</strong> &amp; <strong>Johni B</strong></p>
+        <div class="cta-row">
+          <a class="btn primary" href="sweet16.html">Enter Picks</a>
+          <a class="btn" href="live.html">Live Scores</a>
+          <a class="btn outline" href="standings.html">Standings</a>
+        </div>
+      </div>
+      <div class="hero-overlay"></div>
+    </section>
+
+    <!-- QUICK LINKS -->
+    <section class="container quicklinks">
+      <a class="ql-card" href="rules.html">
+        <div class="icon">📜</div>
+        <div class="text">
+          <h3>Rules</h3>
+          <p>How to play, scoring, and deadlines.</p>
+        </div>
+      </a>
+      <a class="ql-card" href="sweet16.html">
+        <div class="icon">🏀</div>
+        <div class="text">
+          <h3>Sweet16 Entry</h3>
+          <p>Submit your bracket entry online.</p>
+        </div>
+      </a>
+      <a class="ql-card" href="standings.html">
+        <div class="icon">📊</div>
+        <div class="text">
+          <h3>Standings</h3>
+          <p>See who’s leading during the tourney.</p>
+        </div>
+      </a>
+      <a class="ql-card" href="quikpik.html">
+        <div class="icon">⚡</div>
+        <div class="text">
+          <h3>QuikPik</h3>
+          <p>Fast game picks, separate leaderboard.</p>
+        </div>
+      </a>
+    </section>
+
+    <!-- FEATURED PLAYERS (placeholders) -->
+    <section class="container features">
+      <h2 class="section-title">Who's Gonna Win?</h2>
+      <div class="grid3">
+        <article class="card fade-in">
+          <div class="media" style="background-image:url('assets/img/johni-broome.jpg')"></div>
+          <div class="card-body">
+            <h3>Johni Broome, Auburn</h3>
+            <p>Dominant two-way play — rim protection and interior scoring.</p>
+          </div>
+        </article>
+        <article class="card fade-in" style="--d:0.07s">
+          <div class="media" style="background-image:url('assets/img/cooper-flagg.jpg')"></div>
+          <div class="card-body">
+            <h3>Cooper Flagg, Duke</h3>
+            <p>Freshman phenom with elite versatility and shot creation.</p>
+          </div>
+        </article>
+        <article class="card fade-in" style="--d:0.14s">
+          <div class="media" style="background-image:url('assets/img/walter-clayton-jr.jpg')"></div>
+          <div class="card-body">
+            <h3>Walter Clayton Jr, Florida</h3>
+            <p>Microwave scorer—streaky from deep and fearless late.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 SmitterPC Sports Enterprises Inc • <a href="privacy.html">Privacy</a></p>
+    </div>
+  </footer>
+
+  <!-- tiny enhancement: smooth entrance animations -->
+  <script>
+    // Reveal on scroll
+    const faders = document.querySelectorAll('.fade-in');
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+    }, { threshold: 0.2 });
+    faders.forEach(el=>io.observe(el));
+  </script>
 </body>
 </html>
