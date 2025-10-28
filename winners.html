@@ -100,7 +100,7 @@
       const { data, error } = await supabase
         .from('pools_podium')
         .select('*')
-        .order('year', { descending: true });
+        .order('year', { ascending: false });
 
       if (error) {
         status.textContent = 'Error: ' + error.message;
