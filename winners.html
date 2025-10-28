@@ -31,6 +31,7 @@
           <th>2nd Place</th>
           <th>3rd Place</th>
           <th>4th Place</th>
+          <th>Full Standings</th>
         </tr>
       </thead>
       <tbody id="podium-body"></tbody>
@@ -78,7 +79,7 @@
         .replaceAll('"', '&quot;')
         .replaceAll("'", '&#039;');
     }
-
+      
     function renderEntry(cellValue) {
       if (!cellValue) return "";
       const [title, ...nameParts] = String(cellValue).split(/\r?\n/);
@@ -89,6 +90,15 @@
              `</div>`;
     }
 
+    function standingsCell(year) {
+      const y = String(year).trim();
+      const url = `https://officepool.pydmsw.com/smitterpc/${encodeURIComponent(y)}/Standings.htm`;
+    return `<a href="${url}" target="_blank" rel="noopener"
+            style="display:inline-block;padding:6px 10px;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none">
+            View
+          </a>`;
+    }
+    
     async function loadData() {
       const status = document.getElementById('status');
       const table = document.getElementById('podium-table');
@@ -118,6 +128,7 @@
           <td>${renderEntry(row.second_place)}</td>
           <td>${renderEntry(row.third_place)}</td>
           <td>${renderEntry(row.fourth_place)}</td>
+          <td>${standingsCell(row.year)}</td>
         `;
         tbody.appendChild(tr);
       }
