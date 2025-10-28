@@ -128,6 +128,20 @@
 
     loadData();
   </script>
+
+  <script>
+  // AUTO-RESIZE IFRAME IN WIX
+  // Send current page height to parent (Wix)
+  function sendHeight() {
+    const height = document.documentElement.scrollHeight;
+    parent.postMessage({ type: 'winners:height', height }, '*');
+  }
+
+  // Recalculate height when content changes
+  new ResizeObserver(sendHeight).observe(document.body);
+  window.addEventListener('load', sendHeight);
+  setTimeout(sendHeight, 1000); // safety update after data loads
+</script>
 </body>
 </html>
 
