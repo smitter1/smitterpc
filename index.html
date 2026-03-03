@@ -1,123 +1,261 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Home | SmitterPC NCAA</title>
-  <meta name="description" content="Remember the Madness! SmitterPC NCAA Pools — Live links, Sweet16 entry, Standings, QuikPik, and history." />
-  <link rel="stylesheet" href="css/home.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header class="topbar">
-    <div class="container">
-      <div class="brand">
-        <img src="assets/img/logo-placeholder.svg" alt="SmitterPC Logo" />
-        <span class="brand-title">SmitterPC NCAA '25</span>
-      </div>
-      <nav class="nav">
-        <a href="index.html" class="active">Home</a>
-        <a href="live.html">Live</a>
-        <a href="sweet16.html">Sweet16</a>
-        <a href="standings.html">Standings</a>
-        <a href="quikpik.html">QuikPik</a>
-        <a href="history.html">HOF</a>
-      </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmitterPC NCAA '25</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="top-bar">
+        <div class="top-bar__left">
+          <div class="logo-circle" aria-hidden="true">
+            <img
+              class="logo-circle__img"
+              src="assets/img/basketball_tr2.png"
+              alt=""
+            />
+          </div>
+          <div class="brand-text">
+            <div class="brand-title">SmitterPC NCAA '25</div>
+            <div class="brand-subtitle">Tournament Bracket Challenge</div>
+          </div>
+        </div>
+        <nav class="top-bar__nav">
+          <button class="nav-btn nav-btn--primary">Enter Bracket</button>
+          <button class="nav-btn">How It Works</button>
+          <button class="nav-btn">Standings</button>
+          <button class="nav-btn">Jelani</button>
+          <button class="nav-btn">HOF</button>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero__content">
+            <h1>March Madness. We&apos;re Ready. Who You Got?</h1>
+            <p>
+              SmitterPC NCAA &apos;25 gives you the shot to prove your bracket
+              brilliance. Pick your winners, track the chaos, and see how you
+              stack up against the field.
+            </p>
+            <button class="cta-btn cta-btn--hero">Enter Your Bracket</button>
+            <div class="hero__logos">
+              <span class="hero-logo hero-logo--small">Sponsor 1</span>
+              <span class="hero-logo hero-logo--small">Sponsor 2</span>
+              <span class="hero-logo hero-logo--small">Sponsor 3</span>
+            </div>
+          </div>
+          <div class="hero__image">
+            <div class="hero__badge">
+              <img
+                class="hero__badge-image"
+                src="assets/img/2025_NCAA_Men's_Final_Four_logo.avif"
+                alt="2025 NCAA Men's Final Four logo"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="road">
+          <div class="road__inner">
+            <div class="road__image-group">
+              <img
+                class="road__image"
+                src="assets/img/RedRoad.png"
+                alt="The Road to the Final Four artwork"
+              />
+            </div>
+            <div class="road__text">
+              <h2>The Road to the Final Four</h2>
+              <p>
+                Break down the brackets with SmitterPC, Doku vs John B, and more.
+                We&apos;ll walk through the matchups, highlight the sleepers, and
+                call out the must-watch games as the madness unfolds.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="players">
+          <div class="section-header">
+            <h2>Who&apos;s Gonna Win?</h2>
+            <p>
+              Check out some of the players and storylines everyone&apos;s talking
+              about heading into the tournament.
+            </p>
+          </div>
+          <div class="players__grid">
+            <article class="player-card">
+              <div class="player-card__image">
+                <img src="assets/img/Player1.avif" alt="Featured player 1" />
+              </div>
+              <div class="player-card__body">
+                <h3>John Broom</h3>
+                <div class="player-team">Auburn</div>
+                <p>
+                  Arguably the #1 player in college basketball this season,
+                  playing for the #1 team in the country! At 18 ppg he&apos;s got
+                  size and talent! Can Auburn pull it off? They are the favorite,
+                  so Vegas says get out yer Broome ... how about you?
+                </p>
+              </div>
+            </article>
+            <article class="player-card">
+              <div class="player-card__image">
+                <img src="assets/img/Player2.avif" alt="Featured player 2" />
+              </div>
+              <div class="player-card__body">
+                <h3>Cameron Paige</h3>
+                <div class="player-team">Duke</div>
+                <p>
+                  A versatile wing who can stretch the floor, finish at the rim,
+                  and defend multiple positions. A matchup problem all night.
+                </p>
+              </div>
+            </article>
+            <article class="player-card">
+              <div class="player-card__image">
+                <img src="assets/img/Player3.avif" alt="Featured player 3" />
+              </div>
+              <div class="player-card__body">
+                <h3>Walter Clayton Jr.</h3>
+                <div class="player-team">Florida</div>
+                <p>
+                  Shooter&apos;s shooter with deep range and no fear of the big
+                  moment. If he heats up, your bracket might be in flames.
+                </p>
+              </div>
+            </article>
+            <article class="player-card">
+              <div class="player-card__image">
+                <img src="assets/img/Player4.avif" alt="Featured player 4" />
+              </div>
+              <div class="player-card__body">
+                <h3>Cruz Larens</h3>
+                <div class="player-team">Tennessee</div>
+                <p>
+                  Steady floor general who sees the whole court and sets the
+                  tempo. The kind of guard every March contender needs.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="cta-strip">
+          <div class="cta-strip__inner">
+            <div class="cta-strip__text">
+              <h2>Ready to Play? OK, Let&apos;s Go...</h2>
+              <p>
+                Lock in your picks before tip-off and follow the upsets, buzzer
+                beaters, and bracket busters all tournament long.
+              </p>
+              <button class="cta-btn cta-btn--strip">Enter Picks</button>
+            </div>
+            <div class="cta-strip__image">
+              <img
+                class="cta-strip__photo"
+                src="assets/img/jordanNC.avif"
+                alt="Jordan in North Carolina jersey"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="testimonials">
+          <div class="section-header">
+            <h2>What SmitterPC NCAA Folks Have to Say</h2>
+          </div>
+          <div class="testimonials__grid">
+            <article class="testimonial-card">
+              <div class="testimonial-card__tag">Fan Favorite</div>
+              <div class="testimonial-card__media">
+                <img
+                  src="assets/img/Folk1.png"
+                  alt="SmitterPC NCAA player feedback 1"
+                />
+              </div>
+              <h3>Bracket Trash Talk</h3>
+              <p>
+                “I live for the upsets. SmitterPC keeps my bracket madness organized
+                and fun.”
+              </p>
+            </article>
+            <article class="testimonial-card">
+              <div class="testimonial-card__tag">Fan Favorite</div>
+              <div class="testimonial-card__media">
+                <img
+                  src="assets/img/Folk2.png"
+                  alt="SmitterPC NCAA player feedback 2"
+                />
+              </div>
+              <h3>Snack Time Strategy</h3>
+              <p>
+                “Halftime is for adjusting picks and loading up on snacks. This site
+                makes both easy.”
+              </p>
+            </article>
+            <article class="testimonial-card">
+              <div class="testimonial-card__tag">Fan Favorite</div>
+              <div class="testimonial-card__media">
+                <img
+                  src="assets/img/Folk3.png"
+                  alt="SmitterPC NCAA player feedback 3"
+                />
+              </div>
+              <h3>Game Day Rituals</h3>
+              <p>
+                “From play-in to championship, I track every game right here.”
+              </p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <div class="logo-circle logo-circle--footer">SPC</div>
+            <div class="brand-text">
+              <div class="brand-title">SmitterPC NCAA &apos;25</div>
+              <div class="brand-subtitle">Tournament Bracket Challenge</div>
+            </div>
+          </div>
+          <div class="footer__center">
+            <div class="footer__badge">
+              <img
+                class="footer__badge-image"
+                src="assets/img/2025_NCAA_FinalFour_BlueBG.avif"
+                alt="2025 NCAA Final Four blue background logo"
+              />
+            </div>
+          </div>
+          <div class="footer__social">
+            <button class="social-btn">f</button>
+            <button class="social-btn">X</button>
+            <button class="social-btn">IG</button>
+            <button class="social-btn">YT</button>
+          </div>
+        </div>
+        <div class="footer__links">
+          <a href="#contact">Contact Us</a>
+          <a href="#tos">Terms of Use</a>
+          <a href="#privacy">Privacy Policy</a>
+        </div>
+        <div class="footer__bottom">
+          <p>© 2025 SmitterPC. All rights reserved.</p>
+        </div>
+      </footer>
     </div>
-  </header>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-media" style="background-image:url('assets/img/hero-placeholder.jpg')"></div>
-      <div class="container hero-content">
-        <h1 class="headline">March Madness. We're Ready! Who You Got?</h1>
-        <p class="subhead">The Road to the Final Four w/ your hosts <strong>SmitterPC</strong>, <strong>Dicky V</strong> &amp; <strong>Johni B</strong></p>
-        <div class="cta-row">
-          <a class="btn primary" href="sweet16.html">Enter Picks</a>
-          <a class="btn" href="live.html">Live Scores</a>
-          <a class="btn outline" href="standings.html">Standings</a>
-        </div>
-      </div>
-      <div class="hero-overlay"></div>
-    </section>
-
-    <!-- QUICK LINKS -->
-    <section class="container quicklinks">
-      <a class="ql-card" href="rules.html">
-        <div class="icon">📜</div>
-        <div class="text">
-          <h3>Rules</h3>
-          <p>How to play, scoring, and deadlines.</p>
-        </div>
-      </a>
-      <a class="ql-card" href="sweet16.html">
-        <div class="icon">🏀</div>
-        <div class="text">
-          <h3>Sweet16 Entry</h3>
-          <p>Submit your bracket entry online.</p>
-        </div>
-      </a>
-      <a class="ql-card" href="standings.html">
-        <div class="icon">📊</div>
-        <div class="text">
-          <h3>Standings</h3>
-          <p>See who’s leading during the tourney.</p>
-        </div>
-      </a>
-      <a class="ql-card" href="quikpik.html">
-        <div class="icon">⚡</div>
-        <div class="text">
-          <h3>QuikPik</h3>
-          <p>Fast game picks, separate leaderboard.</p>
-        </div>
-      </a>
-    </section>
-
-    <!-- FEATURED PLAYERS (placeholders) -->
-    <section class="container features">
-      <h2 class="section-title">Who's Gonna Win?</h2>
-      <div class="grid3">
-        <article class="card fade-in">
-          <div class="media" style="background-image:url('assets/img/johni-broome.png')"></div>
-          <div class="card-body">
-            <h3>Johni Broome, Auburn</h3>
-            <p>Dominant two-way player — strong rim protection and interior scoring.</p>
-          </div>
-        </article>
-        <article class="card fade-in" style="--d:0.07s">
-          <div class="media" style="background-image:url('assets/img/cooper-flagg.png')"></div>
-          <div class="card-body">
-            <h3>Cooper Flagg, Duke</h3>
-            <p>Freshman phenom with elite versatility and shot creation.</p>
-          </div>
-        </article>
-        <article class="card fade-in" style="--d:0.14s">
-          <div class="media" style="background-image:url('assets/img/walter-clayton-jr.png')"></div>
-          <div class="card-body">
-            <h3>Walter Clayton Jr, Florida</h3>
-            <p>Microwave scorer—streaky from deep and fearless late.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 SmitterPC Sports Enterprises Inc • <a href="privacy.html">Privacy</a></p>
-    </div>
-  </footer>
-
-  <!-- tiny enhancement: smooth entrance animations -->
-  <script>
-    // Reveal on scroll
-    const faders = document.querySelectorAll('.fade-in');
-    const io = new IntersectionObserver((entries)=>{
-      entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
-    }, { threshold: 0.2 });
-    faders.forEach(el=>io.observe(el));
-  </script>
-</body>
+    <script src="src/script.js"></script>
+  </body>
 </html>
