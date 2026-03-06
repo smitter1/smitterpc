@@ -3,27 +3,96 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Standings - SmitterPC</title>
+<title>Standings | SmitterPC NCAA '26</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="src/styles.css">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<header class="top-bar">
+  <div class="top-bar__left">
+    <div class="logo-circle" aria-hidden="true">
+      <img class="logo-circle__img" src="assets/img/basketball_tr2.png" alt="">
+    </div>
+    <div class="brand-text">
+      <div class="brand-title">SmitterPC NCAA '26</div>
+      <div class="brand-subtitle">Tournament Bracket Challenge</div>
+    </div>
+  </div>
+  <nav class="top-bar__nav">
+    <a href="index.html" class="nav-btn">Home</a>
+    <a href="rules.html" class="nav-btn">Rules</a>
+    <a href="live.html" class="nav-btn">Live</a>
+    <a href="sweet16.html" class="nav-btn">Enter Picks</a>
+    <a href="standings.html" class="nav-btn">Standings</a>
+    <a href="quikpik.html" class="nav-btn">QuikPik</a>
+    <a href="jelani.html" class="nav-btn">Jelani</a>
+    <a href="history.html" class="nav-btn">HOF</a>
+  </nav>
+</header>
 <div class="container">
-<nav class="nav">
-  <a href="index.html">Home</a>
-  <a href="live.html">Live</a>
-  <a href="sweet16.html">Sweet16</a>
-  <a href="standings.html">Standings</a>
-  <a href="quikpik.html">QuikPik</a>
-  <a href="jelani.html">Jelani</a>
-  <a href="history.html">HOF</a>
-  <a href="privacy.html">Privacy</a>
-  <a href="winners.html">Winners</a>
-</nav>
 
 <section class="card">
 <h1>Standings</h1><p>View the current standings of the SmitterPC NCAA Pool here.</p><div class='iframe-wrap'><iframe src='STANDINGS_URL_HERE'></iframe></div>
 </section>
-<p class="footer">© 2025 SmitterPC Sports Enterprises Inc</p>
 </div>
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <div class="logo-circle logo-circle--footer">
+        <img class="logo-circle__img" src="assets/img/basketball_tr2.png" alt="">
+      </div>
+      <div class="brand-text">
+        <div class="brand-title">SmitterPC NCAA '26</div>
+        <div class="footer__contact">
+          Contact Us @<br />
+          Tourney Pools R' Us<br />
+          2025 Cooper Flagg Way<br />
+          Cameron Stadium, Durham<br />
+          USA
+        </div>
+      </div>
+    </div>
+    <div class="footer__center">
+      <div class="footer__badge">
+        <img
+          class="footer__badge-image"
+          src="assets/img/2026_men's_Final_Four_Logo.svg.png"
+          alt="2025 NCAA Final Four blue background logo"
+        />
+      </div>
+    </div>
+    <div class="footer__social-wrap">
+      <div class="footer__social">
+        <a href="#" class="social-link" aria-label="Social 1"><img src="assets/img/Social1.png" alt="Social 1"></a>
+        <a href="#" class="social-link" aria-label="Social 2"><img src="assets/img/Social2.png" alt="Social 2"></a>
+        <a href="#" class="social-link" aria-label="Social 3"><img src="assets/img/Social3.png" alt="Social 3"></a>
+        <a href="#" class="social-link" aria-label="Social 4"><img src="assets/img/Social4.png" alt="Social 4"></a>
+      </div>
+      <div class="footer__support">
+        Customer Care:<br />
+        <a href="mailto:smitter@smitter.com">smitter@smitter.com</a><br /><br />
+        Tech Support:<br />
+        <a href="mailto:paulcausey@gmail.com">paulcausey@gmail.com</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__links">
+    <a href="index.html">Home</a>
+    <span class="footer__sep">|</span>
+    <a href="rules.html">Rules</a>
+    <span class="footer__sep">|</span>
+    <a href="privacy.html">Privacy</a>
+  </div>
+  <div class="footer__bottom">
+    <p>© 2026 by SmitterPC Sports Enterprises Inc<br />A subdivision of Limited Talent Productions, in cooperation with Semi-legit Tourney Pools LLC</p>
+  </div>
+</footer>
+<script src="src/script.js"></script>
 </body>
 </html>
