@@ -1,0 +1,177 @@
+window.HOF_DATA = [
+  {
+    "year": "2025",
+    "winner": "Fumunda East (Gregory Gent)",
+    "second": "IU of Bricklayers (Fletcher Waggoner)",
+    "third": "Scaletipper 2 (Keith Armstrong)",
+    "fourth": "PrimeTime (Mark Ishikawa)"
+  },
+  {
+    "year": "2024",
+    "winner": "TinkerBells (Mary Beth Shipp)",
+    "second": "ClonesGolfer7 (Drew Dalziel)",
+    "third": "SC4DDK (Dan Kim)",
+    "fourth": "MLS (Mark Schade)"
+  },
+  {
+    "year": "2023",
+    "winner": "PauloT (Paulo Trento)",
+    "second": "Brackethead (Mark Allard)",
+    "third": "LinBish01 (Linda Bishop)",
+    "fourth": "Lefty Loser (Alex Barden)"
+  },
+  {
+    "year": "2022",
+    "winner": "Lil E Shady (Erin Schade)",
+    "second": "J the K (James Garner)",
+    "third": "Xfinitygirl (Elaine Barden)",
+    "fourth": "Big O (Owen Ishikawa)"
+  },
+  {
+    "year": "2021",
+    "winner": "Scaletipper 2 (Keith Armstrong)",
+    "second": "Packman (Mike Pack)",
+    "third": "Hank O'Lottapuss",
+    "fourth": "Onions! (Troye Fontenette)"
+  },
+  {
+    "year": "2020",
+    "winner": "",
+    "second": "No Tourney",
+    "third": "Due to Covid",
+    "fourth": ""
+  },
+  {
+    "year": "2019",
+    "winner": "Lefty Loser (Alex Barden)",
+    "second": "BudPalChief (Chet Hodgins)",
+    "third": "ToddSaveTheQueen (Todd Stevens)",
+    "fourth": "Charitable D (John O'Connell)"
+  },
+  {
+    "year": "2018",
+    "winner": "The Rose Kids (Pete Rose)",
+    "second": "RShigaki (Rick Shigaki)",
+    "third": "Big Fella III (PC!)",
+    "fourth": "Fonsecaice (Alex Fonseca )"
+  },
+  {
+    "year": "2017",
+    "winner": "Cynonym (Cyndi Debortoli)",
+    "second": "Olivertical (Oliver Barton)",
+    "third": "Action Jackson (Jackson Stoll)",
+    "fourth": "Old City Kid (James Clyne)"
+  },
+  {
+    "year": "2016",
+    "winner": "Troy 2 (Troy Kirkland)",
+    "second": "Big Fella I (PC!)",
+    "third": "J & H Go to College (Pat Evans)",
+    "fourth": "Buck Naked (Chris Kolczun)"
+  },
+  {
+    "year": "2015",
+    "winner": "Da OliJo Show (Jonah Barton)",
+    "second": "Glendale Professor (Gary K)",
+    "third": "Count Rugen (Jason Culp)",
+    "fourth": "THUNDER (Tim Wilson)"
+  },
+  {
+    "year": "2014",
+    "winner": "Legos (Phil Guite)",
+    "second": "Old City Kid (James Clyne)",
+    "third": "Troy 1 (Troy Kirkland)",
+    "fourth": "TroyMarlaSDSU3 (Troy & Marla)"
+  },
+  {
+    "year": "2013",
+    "winner": "ACC4Life (David Boyd)",
+    "second": "Big Sid (Sid Smith)",
+    "third": "Pumas23 (Mark Ishikawa)",
+    "fourth": "Black Tongue (Bob Eshelman)"
+  },
+  {
+    "year": "2012",
+    "winner": "Fumunda East (Greg Gent)",
+    "second": "PacMan Picks (Tim Berglund)",
+    "third": "Smitter (Smitter!)",
+    "fourth": "The Profit (Ladd Carman)"
+  },
+  {
+    "year": "2011",
+    "winner": "Sugar Girl! (Ladd Carman)",
+    "second": "Flatheads (Lawrence Baur)",
+    "third": "Arms5 (Keith Armstrong)",
+    "fourth": "G.O.A.T (Phil Guite)"
+  },
+  {
+    "year": "2010",
+    "winner": "CurlyRose (Mary Lou Biss)",
+    "second": "Bud Hole (Keith Armstrong)",
+    "third": "Dr Bob 2 (Bob Stoll)",
+    "fourth": "Bud Hole 2 (Keith A)"
+  },
+  {
+    "year": "2009",
+    "winner": "The Dominator (James Perfetti)",
+    "second": "Luc & Babar (Bob Runnells)",
+    "third": "PC (PC!)",
+    "fourth": "Thomey's Pick (Joe Thome)"
+  },
+  {
+    "year": "2008",
+    "winner": "Tangokula (Troy Kirkland)",
+    "second": "Butterwalls (Sam Joof)",
+    "third": "Short (Jeff Short)",
+    "fourth": "SEADOG (Dan Miller)"
+  },
+  {
+    "year": "2007",
+    "winner": "Sanchez (Bill Trento)",
+    "second": "Smitter (Smitter!)",
+    "third": "Bruin Bruin (Brian Reeves)",
+    "fourth": "RChats (Rebecca Taylor)"
+  },
+  {
+    "year": "2006",
+    "winner": "Mark Cortez's Barber (Craig F)",
+    "second": "Dr Bob 2 (Stoll)",
+    "third": "Bintang (Bob House)",
+    "fourth": "Jo Mamma (Kevin Ishikawa)"
+  },
+  {
+    "year": "2005",
+    "winner": "Montana Joes (Aaron Lott)",
+    "second": "Duts (Phil Guite)",
+    "third": "ThunderLips (Jerry Sack)",
+    "fourth": "DBernier (Dave B)"
+  },
+  {
+    "year": "2004",
+    "winner": "SEADOG (Dan Miller)",
+    "second": "Little Lady Carman (Lisa)",
+    "third": "Pete Rose (Pete)",
+    "fourth": "THUNDER (Tim Wilson)"
+  },
+  {
+    "year": "2003",
+    "winner": "El Greco (Rene Parra)",
+    "second": "Team LeBron (Smitter!)",
+    "third": "Big T Little O Little D Little D",
+    "fourth": "TAZ (Dave Nichols)"
+  },
+  {
+    "year": "2002",
+    "winner": "Duts (Phil Guite)",
+    "second": "Jethro (Jeff Hicks)",
+    "third": "Schadey's Squad (Mark Schade)",
+    "fourth": "Mark Zeko (Zeko)"
+  },
+  {
+    "year": "2001",
+    "winner": "Pete Rose (Pete Rose)",
+    "second": "Easy Money (Morrie Gates)",
+    "third": "Duts (Phil Guite)",
+    "fourth": "Dr. Bob (Dr. Bob)"
+  }
+];

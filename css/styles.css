@@ -62,3 +62,70 @@ nav.nav a:hover, nav.nav a.active {
   height: 100%;
   border: 0;
 }
+
+/* Results pages need a larger embed viewport */
+.iframe-wrap--results {
+  padding-top: 0;
+  height: 1375px;
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+}
+
+.card--results {
+  width: calc(100% + 100px);
+  max-width: none;
+  margin-left: -50px;
+}
+
+.iframe-wrap--standings {
+  height: 3375px;
+}
+
+/* Entry form is long; give it a much taller viewport */
+.iframe-wrap--entry {
+  padding-top: 0;
+  height: 1800px;
+}
+
+.hof-card {
+  overflow: hidden;
+}
+
+.hof-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+.hof-table {
+  width: 100%;
+  min-width: 820px;
+  border-collapse: collapse;
+  background: #ffffff;
+}
+
+.hof-table th,
+.hof-table td {
+  text-align: left;
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.9rem;
+}
+
+.hof-table th {
+  font-weight: 700;
+  background: #f8fafc;
+}
+
+@media (max-width: 900px) {
+  .card--results,
+  .iframe-wrap--results {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .iframe-wrap--entry {
+    height: 1700px;
+  }
+}

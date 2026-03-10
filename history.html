@@ -38,8 +38,27 @@
 </header>
 <div class="container">
 
-<section class="card">
-<h1>Hall of Fame / History</h1><p>Explore past winners, records, and memorable tournaments. Check out the <a href='winners.html'>Winners</a> page for full details.</p>
+<section class="card hof-card">
+<h1>Hall of Fame / History</h1>
+<p>Explore past winners, records, and memorable tournaments. Data is loaded from our HOF spreadsheet export.</p>
+<div class="hof-table-wrap">
+  <table class="hof-table" aria-label="Hall of Fame standings by year">
+    <thead>
+      <tr>
+        <th>Year</th>
+        <th>Winner (Gold)</th>
+        <th>2nd (Silver)</th>
+        <th>3rd (Bronze)</th>
+        <th>4th (Wood)</th>
+      </tr>
+    </thead>
+    <tbody id="hof-body">
+      <tr>
+        <td colspan="5">Loading Hall of Fame data...</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 </section>
 </div>
 <footer class="footer">
@@ -95,5 +114,37 @@
   </div>
 </footer>
 <script src="src/script.js"></script>
+<script src="data/hof-data.js"></script>
+<script>
+  (function loadHofData() {
+    const body = document.getElementById("hof-body");
+    if (!body) return;
+
+    try {
+      const rows = Array.isArray(window.HOF_DATA) ? window.HOF_DATA : [];
+
+      if (rows.length === 0) {
+        body.innerHTML = "<tr><td colspan='5'>No HOF data found.</td></tr>";
+        return;
+      }
+
+      body.innerHTML = rows
+        .map(function (row) {
+          return (
+            "<tr>" +
+            "<td>" + (row.year || "") + "</td>" +
+            "<td>" + (row.winner || "") + "</td>" +
+            "<td>" + (row.second || "") + "</td>" +
+            "<td>" + (row.third || "") + "</td>" +
+            "<td>" + (row.fourth || "") + "</td>" +
+            "</tr>"
+          );
+        })
+        .join("");
+    } catch (err) {
+      body.innerHTML = "<tr><td colspan='5'>Could not load HOF data.</td></tr>";
+    }
+  })();
+</script>
 </body>
 </html>
