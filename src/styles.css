@@ -96,12 +96,20 @@ body {
 }
 
 .nav-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.7);
   background: transparent;
   color: #ffffff;
   padding: 0.4rem 0.9rem;
+  min-height: 32px;
   font-size: 0.8rem;
+  line-height: 1.1;
+  text-align: center;
+  white-space: nowrap;
+  flex-shrink: 0;
   font-weight: 700;
   text-decoration: none;
   cursor: pointer;
@@ -188,7 +196,7 @@ body {
 }
 
 .hero__badge {
-  width: min(500px, 100%);
+  width: clamp(230px, 70vw, 350px);
   border-radius: 0;
   background: transparent;
   display: flex;
