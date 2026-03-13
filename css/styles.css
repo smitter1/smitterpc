@@ -129,3 +129,9 @@ nav.nav a:hover, nav.nav a.active {
     height: 2000px;
   }
 }
+
+@media (max-width: 640px) {
+  .iframe-wrap--entry {
+    height: 2800px;
+  }
+}
