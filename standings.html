@@ -40,12 +40,10 @@
 <div class="container">
 
 <section class="card card--results">
-<h1>Standings</h1><p>View the current standings of the SmitterPC NCAA Pool here.</p><p><a href="https://officepool.pydmsw.com/smitterpc/2026/Standings.htm??v=20260302-2" target="_blank" rel="noopener noreferrer">Open full page ↗</a></p>
-
-	<div class='iframe-wrap iframe-wrap--results iframe-wrap--standings'>
-		<iframe id="standings-iframe" src='https://officepool.pydmsw.com/smitterpc/2026/Standings.htm'></iframe>
-	</div>
-
+<h1>Standings</h1>
+<div class='iframe-wrap iframe-wrap--results iframe-wrap--standings'>
+	<iframe id="standings-iframe" src='https://officepool.pydmsw.com/smitterpc/2026/Standings.htm'></iframe>
+</div>
 </section>
 </div>
 <footer class="footer">
@@ -117,8 +115,7 @@
   }
 
   window.addEventListener('load', refreshIframe);
-  setInterval(refreshIframe, 5 * 60 * 1000); // 5 minutes in milliseconds
+  setInterval(refreshIframe, 1 * 60 * 1000); // 5 minutes in milliseconds
 </script>
-
 </body>
 </html>

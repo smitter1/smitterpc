@@ -40,7 +40,11 @@
 <div class="container">
 
 <section class="card">
-<h1>March Madness Entry Form</h1><p>Enter the pool using the embedded OfficePool form below. If it doesn't load, use the link to open it in a new tab.</p><p><a target='_blank' href='https://officepool.pydmsw.com/smitterpc/2026/EntryForm/SmitterPC2026_WebEntry_Form_Test_v2.htm?v=20260302-2'>Open full page ↗</a></p><div class='iframe-wrap iframe-wrap--entry'><iframe src='https://officepool.pydmsw.com/smitterpc/2026/EntryForm/SmitterPC2026_WebEntry_Form_Test_v2.htm?v=20260302-2' loading='lazy'></iframe></div>
+<h1>March Madness Entry Form</h1>
+<p>Enter the pool using the embedded OfficePool form below. If form doesn't load, please be patient and try again later as form hosting server is likely down. Report as needed.</p>
+<div class='iframe-wrap iframe-wrap--results iframe-wrap--standings'>
+<iframe id="standings-iframe" src='https://officepool.pydmsw.com/smitterpc/2026/EntryForm/SmitterPC2026_WebEntry_Form_Test_v2.htm'></iframe>
+</div>
 </section>
 </div>
 <footer class="footer">
@@ -96,5 +100,13 @@
   </div>
 </footer>
 <script src="src/script.js?v=20260302-2"></script>
+<script>
+	window.addEventListener('load', function() {
+    var iframe = document.getElementById('standings-iframe');
+    if (iframe) {
+      iframe.src = iframe.src + '?ts=' + new Date().getTime();
+    }
+  });
+</script>
 </body>
 </html>
