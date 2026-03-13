@@ -85,7 +85,7 @@ nav.nav a:hover, nav.nav a.active {
 /* Entry form is long; give it a much taller viewport */
 .iframe-wrap--entry {
   padding-top: 0;
-  height: 2200px;
+  height: 1900px;
 }
 
 .hof-card {
@@ -126,6 +126,6 @@ nav.nav a:hover, nav.nav a.active {
   }
 
   .iframe-wrap--entry {
-    height: 1700px;
+    height: 1900px;
   }
 }
