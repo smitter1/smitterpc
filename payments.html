@@ -12,9 +12,78 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/styles.css?v=20260302-2" />
+    <style>
+      .password-gate {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.25rem;
+        background: #f5f7fb;
+      }
+      .password-gate__card {
+        width: 100%;
+        max-width: 420px;
+        background: #ffffff;
+        border: 1px solid #dbe3ee;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        padding: 1.25rem;
+      }
+      .password-gate__title {
+        margin: 0 0 0.35rem;
+        font-size: 1.15rem;
+      }
+      .password-gate__text {
+        margin: 0 0 0.9rem;
+        color: #4b5563;
+      }
+      .password-gate__input {
+        width: 100%;
+        border: 1px solid #cfd8e3;
+        border-radius: 8px;
+        padding: 0.65rem 0.7rem;
+        font-size: 0.95rem;
+      }
+      .password-gate__button {
+        margin-top: 0.7rem;
+        width: 100%;
+        border: 0;
+        border-radius: 8px;
+        background: #0b57d0;
+        color: #ffffff;
+        font-weight: 600;
+        padding: 0.65rem 0.7rem;
+        cursor: pointer;
+      }
+      .password-gate__error {
+        margin: 0.7rem 0 0;
+        color: #b91c1c;
+        font-size: 0.9rem;
+        min-height: 1.2rem;
+      }
+      .password-gate__help {
+        margin-top: 0.55rem;
+        font-size: 0.9rem;
+      }
+    </style>
   </head>
   <body>
-    <div class="page page--rules">
+    <div id="password-gate" class="password-gate">
+      <div class="password-gate__card">
+        <h1 class="password-gate__title">Password Required</h1>
+        <p class="password-gate__text">Enter the password to view payment details.</p>
+        <input id="password-input" class="password-gate__input" type="password" placeholder="Password" autocomplete="current-password" />
+        <button id="password-submit" class="password-gate__button" type="button">Continue</button>
+        <p id="password-error" class="password-gate__error"></p>
+        <p class="password-gate__help">
+          Need the password? Email
+          <a href="mailto:smitter@smitter.com">smitter@smitter.com</a>.
+        </p>
+      </div>
+    </div>
+
+    <div id="payments-content" class="page page--rules" style="display:none;">
       <header class="top-bar">
         <a href="index.html" class="top-bar__home-link" aria-label="Go to Home page">
           <div class="top-bar__left">
@@ -45,62 +114,58 @@
       <main class="rules-main">
         <div class="rules-container">
           <section class="rules-hero">
-            <h1>How to Pay for Your Pool</h1>
+            <h1>Join the SmitterPC Hoops Club</h1>
             <p>
-              This page explains how to send in your entry fee so we can lock you
-              into the 2025 SmitterPC NCAA Tourney Pool.
-            </p>
-            <p>
-              The official payment details are shared via email each year so we
-              can keep things semi-private and avoid randoms from the internet
-              sneaking into the pool.
+              So you want to join the SmitterPC Hoops Club!
             </p>
           </section>
 
           <section class="rules-section">
-            <h2>Step 1 &mdash; Check Your Email</h2>
-            <p>
-              Look for the annual SmitterPC NCAA invite email in your inbox. It
-              contains:
-            </p>
+            
+            <img
+              class="payments-float-image"
+              src="assets/img/2026_larry_bird.png"
+              alt="Larry Bird"
+            />
+            <h2>SmitterPC Hoops Club membership includes:</h2>
             <ul>
-              <li>The name of our accountant</li>
-              <li>The current entry fee amount (usually $20)</li>
-              <li>Where to send the funds (bank / app details)</li>
-              <li>The password you&apos;ll need for the pool forms</li>
+              <li>A) The SmitterPC Social Network exclusively for our/your friends and family</li>
+              <li>B) Weekly Round-by-Round analysis, game reviews and smack talk</li>
+              <li>C) Entry into the March Madness Bracket challenge</li>
+              <li>D) More fun than you can shake a stick at!</li>
             </ul>
           </section>
 
           <section class="rules-section">
-            <h2>Step 2 &mdash; Send Your Payment</h2>
             <p>
-              Send your payment from a reputable bank or payment service using the
-              instructions in the email. Please:
+              Please send $20 for each membership for the SmitterPC Hoops Club.
             </p>
+          </section>
+
+          <section class="rules-section">
+            <h2>Currently there are a few methods to pay:</h2>
             <ul>
-              <li>Include your full name in the memo line</li>
-              <li>Use the exact amount listed (no more, no less)</li>
-              <li>
-                Send early enough that it clears before the tournament tips off
-              </li>
+              <li>Paypal -- send to: Steve Smith, <a href="mailto:smitter@smitter.com">smitter@smitter.com</a></li>
+              <li>Venmo -- send to: Paul Causey (@paulcausey), +1 (714) 345-2521</li>
+              <li>Zelle -- send to: Paul Causey, +1 (714) 345-2521</li>
+              <li>Apple Cash / Apple Pay -- send to: Paul Causey, +1 (714) 345-2521</li>
             </ul>
           </section>
 
           <section class="rules-section">
-            <h2>Step 3 &mdash; Confirm and Play</h2>
             <p>
-              Once your payment is confirmed, you&apos;re officially in. You&apos;ll
-              be able to:
+              <strong>IMPORTANT:</strong> Please put the bracket name(s) ONLY in the
+              comments. Please do not mention anything about an NCAA Pool, such as
+              "NCAA Tourney", "March Madness", "Basketball Pool" or anything similar
+              that would flag our accounts.
             </p>
-            <ul>
-              <li>Submit your bracket using the entry form</li>
-              <li>Track your squad on the Live and Standings pages</li>
-              <li>Claim victory (and cash) if your picks go the distance</li>
-            </ul>
+          </section>
+
+          <section class="rules-section">
             <p>
-              If you think your payment might not have gone through, or you
-              haven&apos;t received the email with details, reach out to the commish
-              at <a href="mailto:smitter@smitter.com">smitter@smitter.com</a>.
+              Lastly, we'd really prefer that you use one of the electronic methods,
+              but if you can only pay by Good ol' American Check, then send me an
+              email and I'll give you the digits!
             </p>
           </section>
         </div>
@@ -176,6 +241,46 @@
     </div>
 
     <script src="src/script.js?v=20260302-2"></script>
+    <script>
+      (function () {
+        var accessKey = "payments_access_ok";
+        var expectedPassword = "madness";
+        var gate = document.getElementById("password-gate");
+        var content = document.getElementById("payments-content");
+        var input = document.getElementById("password-input");
+        var submit = document.getElementById("password-submit");
+        var error = document.getElementById("password-error");
+
+        function unlock() {
+          sessionStorage.setItem(accessKey, "true");
+          gate.style.display = "none";
+          content.style.display = "block";
+        }
+
+        function handleSubmit() {
+          var entered = (input.value || "").trim();
+          if (entered === expectedPassword) {
+            error.textContent = "";
+            unlock();
+            return;
+          }
+          error.textContent = "Incorrect password. Please try again.";
+          input.value = "";
+          input.focus();
+        }
+
+        if (sessionStorage.getItem(accessKey) === "true") {
+          unlock();
+          return;
+        }
+
+        submit.addEventListener("click", handleSubmit);
+        input.addEventListener("keydown", function (evt) {
+          if (evt.key === "Enter") handleSubmit();
+        });
+        input.focus();
+      })();
+    </script>
   </body>
 </html>
 
