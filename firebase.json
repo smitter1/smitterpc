@@ -5,6 +5,18 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+        "source": "/payments",
+        "destination": "/payments.html",
+        "type": 301
+      },
+      {
+        "source": "/payments/",
+        "destination": "/payments.html",
+        "type": 301
+      }
     ]
   }
 }
