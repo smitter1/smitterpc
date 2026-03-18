@@ -10,12 +10,41 @@
       {
         "source": "/payments",
         "destination": "/payments.html",
-        "type": 301
+        "type": 302
       },
       {
         "source": "/payments/",
         "destination": "/payments.html",
-        "type": 301
+        "type": 302
+      }
+    ],
+    "headers": [
+      {
+        "source": "/payments",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-store, max-age=0"
+          }
+        ]
+      },
+      {
+        "source": "/payments/",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-store, max-age=0"
+          }
+        ]
+      },
+      {
+        "source": "/payments/index.html",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-store, max-age=0"
+          }
+        ]
       }
     ]
   }
