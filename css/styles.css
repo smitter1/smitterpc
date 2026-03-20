@@ -79,7 +79,11 @@ nav.nav a:hover, nav.nav a.active {
 }
 
 .iframe-wrap--standings {
-  height: 3375px;
+  height: 3500px;
+}
+
+.iframe-wrap--quikpiks {
+  height: 16000px;
 }
 
 /* Entry form is long; give it a much taller viewport */
