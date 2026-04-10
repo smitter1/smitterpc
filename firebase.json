@@ -19,8 +19,8 @@
       }
     ],
     "headers": [
-                 {
-        "source": "/1996/**",
+      {
+        "source": "**/*.pdf",
         "headers": [
           {
             "key": "Content-Type",
@@ -32,7 +32,7 @@
           }
         ]
       },
-		{
+      {
         "source": "/payments",
         "headers": [
           {
