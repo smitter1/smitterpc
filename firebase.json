@@ -19,8 +19,8 @@
       }
     ],
     "headers": [
-           {
-        "source": "**/*.pdf",
+                 {
+        "source": "/1996/**",
         "headers": [
           {
             "key": "Content-Type",
